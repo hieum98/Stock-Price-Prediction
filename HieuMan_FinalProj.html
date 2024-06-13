@@ -7594,7 +7594,7 @@ Through this case study, we aim to explore stock price analysis using standard f
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ButQTbIsS-cG">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ButQTbIsS-cG">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7616,55 +7616,7 @@ Through this case study, we aim to explore stock price analysis using standard f
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-also installing the dependencies ‘XML’, ‘htmlwidgets’, ‘rlist’, ‘assertthat’, ‘igraph’, ‘rjson’
-
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-also installing the dependencies ‘BoomSpikeSlab’, ‘Boom’
-
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-also installing the dependency ‘plyr’
-
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-Installing package into ‘/usr/local/lib/R/site-library’
-(as ‘lib’ is unspecified)
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8c2485f-86a1-4cba-a5f4-2d4b2c49284a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d8c2485f-86a1-4cba-a5f4-2d4b2c49284a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7683,107 +7635,6 @@ Installing package into ‘/usr/local/lib/R/site-library’
 <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">gridExtra</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Loading required package: BoomSpikeSlab
-
-Loading required package: Boom
-
-
-Attaching package: ‘Boom’
-
-
-The following object is masked from ‘package:stats’:
-
-    rWishart
-
-
-
-Attaching package: ‘BoomSpikeSlab’
-
-
-The following object is masked from ‘package:stats’:
-
-    knots
-
-
-
-Attaching package: ‘bsts’
-
-
-The following object is masked from ‘package:BoomSpikeSlab’:
-
-    SuggestBurn
-
-
-
-######################### Warning from 'xts' package ##########################
-#                                                                             #
-# The dplyr lag() function breaks how base R's lag() function is supposed to  #
-# work, which breaks lag(my_xts). Calls to lag(my_xts) that you type or       #
-# source() into this session won't work correctly.                            #
-#                                                                             #
-# Use stats::lag() to make sure you're not using dplyr::lag(), or you can add #
-# conflictRules('dplyr', exclude = 'lag') to your .Rprofile to stop           #
-# dplyr from breaking base R's lag() function.                                #
-#                                                                             #
-# Code in packages is not affected. It's protected by R's namespace mechanism #
-# Set `options(xts.warn_dplyr_breaks_lag = FALSE)` to suppress this warning.  #
-#                                                                             #
-###############################################################################
-
-
-Attaching package: ‘dplyr’
-
-
-The following object is masked from ‘package:pillar’:
-
-    dim_desc
-
-
-The following objects are masked from ‘package:xts’:
-
-    first, last
-
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-
-
-Attaching package: ‘lubridate’
-
-
-The following objects are masked from ‘package:base’:
-
-    date, intersect, setdiff, union
-
-
-
-Attaching package: ‘gridExtra’
-
-
-The following object is masked from ‘package:dplyr’:
-
-    combine
-
-
-</pre>
 </div>
 </div>
 </div>
@@ -7964,19 +7815,19 @@ The following object is masked from ‘package:dplyr’:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Time-Series-Decomposition">Time Series Decomposition<a class="anchor-link" href="#Time-Series-Decomposition">¶</a></h3><p>Time series data can exhibit various patterns, and it is often beneficial to decompose a time series into several components, each representing an underlying pattern category.</p>
+<h3 id="Time-Series-Data">Time Series Data<a class="anchor-link" href="#Time-Series-Data">¶</a></h3><p>A time series is a sequence of data points indexed in chronological order, typically measured at successive points in time spaced at uniform intervals. Time series data exhibits a temporal ordering and dependence, where observations closer together in time tend to be more related than observations farther apart. This inherent temporal correlation within the data enables time series analysis techniques to identify patterns and model the underlying mechanisms driving the observed behavior.</p>
+<p>Time series analysis is widely employed for forecasting future values by leveraging the historical patterns and trends present in the data. By capturing the temporal dynamics and dependencies, time series models can extrapolate the observed patterns to make informed predictions about upcoming observations. This forecasting capability finds applications across diverse domains, including finance, economics, environmental monitoring, demand forecasting, and many others, providing valuable insights to support data-driven decision-making processes.</p>
 <h4 id="Additive-Decomposition">Additive Decomposition<a class="anchor-link" href="#Additive-Decomposition">¶</a></h4><p>The additive decomposition model is represented by the following equation:</p>
 <p>$$
 y_{t} = S_{t} + T_{t} + R_{t}
 $$</p>
 <p>Where:</p>
 <ul>
-<li>$y_{t}$ is the data</li>
-<li>$S_{t}$ is the seasonal component</li>
-<li>$T_{t}$ is the trend-cycle component</li>
-<li>$R_{t}$ is the remainder component</li>
+<li>$y_{t}$ is the observated data.</li>
+<li>$S_{t}$ is the seasonality. Seasonality refers to the cyclical patterns or periodic fluctuations in time series data at fixed intervals. These patterns exhibit regular rises and falls driven by underlying factors that systematically influence the observed phenomenon, often associated with recurring events or cyclical phenomena. A classic example is the sales of Christmas trees, which surge in December due to the holiday season but remain low in other months, reflecting an annual seasonal cycle.</li>
+<li>$T_{t}$ is the trend. The trend represents the overall long-term increase or decrease in the values of a time series over an extended period. It reflects the underlying direction or trajectory of the data. Identifying and modeling trends is crucial for accurate forecasting and understanding the forces shaping the observed phenomenon.</li>
+<li>$R_{t}$ is the noise. It is just some random data that we obtain after extracting the trend and the seasonal components from the time series.</li>
 </ul>
-<p>All components are evaluated at period $t$. The seasonal component changes slowly over time, while the remainder component contains any additional factors present in the time series.</p>
 </div>
 </div>
 </div>
@@ -8090,9 +7941,9 @@ Warning message:
 <li><strong>Observed</strong>: The original plot of the data.</li>
 <li><strong>Trend</strong>: The long-term movements in the mean.</li>
 <li><strong>Seasonal</strong>: The repetitive seasonal fluctuations in the data.</li>
-<li><strong>Random</strong>: The irregular or random fluctuations not captured by the trend and seasonal components. When the random component is dominant in a data set, accurate forecasting becomes more challenging.</li>
+<li><strong>Random</strong> or <strong>Noise</strong>: The irregular or random fluctuations not captured by the trend and seasonal components. When the random component is dominant in a data set, accurate forecasting becomes more challenging.</li>
 </ul>
-<p>While we observe similar patterns across components in the BTC and S&amp;P 500 prices, there are significant differences in the relative magnitudes of each component.</p>
+<p>Both S&amp;P 500 and BTC show an upward trend over the period analyzed, but the trend in BTC is more volatile and exhibits sharper peaks and troughs. Particullary, for the S&amp;P500, we can observe a clear upward trend over time, indicating a long-term growth pattern while BTC has more erratic seasonality and higher randomness, pointing to greater unpredictability. The random component for BTC is significantly more volatile than that of the S&amp;P 500, aligning with the general perception of BTC as a highly speculative and volatile asset compared to the relatively stable S&amp;P 500 index.</p>
 </div>
 </div>
 </div>
@@ -8361,12 +8212,9 @@ where $y_{t}^{\prime}$ is the differenced series (it may have been differenced m
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Mean-Absolute-Percentage-Error-(MAPE)">Mean Absolute Percentage Error (MAPE)<a class="anchor-link" href="#Mean-Absolute-Percentage-Error-(MAPE)">¶</a></h4><ul>
-<li>MAPE measures the difference of forecast errors and divides it by the actual observation value.</li>
-<li>It is scale-independent, thus can be used to compare a model's performance across different datasets.</li>
-</ul>
-<h4 id="Model-Performance">Model Performance<a class="anchor-link" href="#Model-Performance">¶</a></h4><p>We observe that the ARIMA model' s performance on the highly volatile Bitcoin (BTC) and S&amp;P500 is not good, as it completely misses the next uptrend in the price action and instead tries to guide the time series back to its moving average.</p>
-<p>This indicates the inability of the ARIMA model to understand the volatility of stock prices. In other words, the model provides no information on the underlying distribution of the time series itself.</p>
+<h4 id="Mean-Absolute-Percentage-Error-(MAPE)">Mean Absolute Percentage Error (MAPE)<a class="anchor-link" href="#Mean-Absolute-Percentage-Error-(MAPE)">¶</a></h4><p>MAPE measures the difference of forecast errors and divides it by the actual observation value. It is scale-independent, thus can be used to compare a model's performance across different datasets.</p>
+<h4 id="Model-Performance">Model Performance<a class="anchor-link" href="#Model-Performance">¶</a></h4><p>The ARIMA model performs better for the S&amp;P 500 index with a lower MAPE, indicating higher predictive accuracy for this more stable and less volatile time series. The higher MAPE for Bitcoin highlights the challenges in modeling highly volatile and speculative assets using ARIMA.</p>
+<h3 id="In-sample-Fit-vs.-Holdout-Fit:">In-sample Fit vs. Holdout Fit:<a class="anchor-link" href="#In-sample-Fit-vs.-Holdout-Fit:">¶</a></h3><p>Both models perform reasonably well in-sample, meaning they can capture the historical patterns and trends. However, the holdout period reveals weaknesses, suggesting the models are not generalizing well to unseen data. This discrepancy between in-sample and holdout performance is critical, as it highlights potential overfitting to historical data without capturing underlying patterns robustly enough for future predictions.</p>
 </div>
 </div>
 </div>
@@ -8392,14 +8240,14 @@ where $y_{t}^{\prime}$ is the differenced series (it may have been differenced m
 <p>Generally, we can write a Bayesian structural model as:</p>
 <p>$$
 \begin{gathered}
-Y_{t} = \mu_{t} + x_{t} \beta + S_{t} + e_{t}, e_{t} \sim N\left(0, \sigma_{e}^{2}\right) \\
-\mu_{t+1} = \mu_{t} + \nu_{t}, \nu_{t} \sim N\left(0, \sigma_{\nu}^{2}\right)
+Y_{t} = \mu_{t} + x_{t} \beta + e_{t}, e_{t} \sim N\left(0, \sigma_{e}^{2}\right) \\
+\mu_{t+1} = \mu_{t} + b_{t} + \nu_{t}, \nu_{t} \sim N\left(0, \sigma_{\nu}^{2}\right) \\
+b_t = b_{t-1} + w, w \sim N(0, \sigma^2)
 \end{gathered}
 $$</p>
 <p>Where:</p>
 <ul>
 <li>$x_{t}$: a set of regressors</li>
-<li>$S_{t}$: seasonality</li>
 <li>$\mu_{t}$: the local level term, defines how the latent state evolves over time and is often referred to as the unobserved trend.</li>
 </ul>
 <p>Note that the regressor coefficients, seasonality, and trend are estimated simultaneously, which helps avoid strange coefficient estimates due to spurious relationships (similar in spirit to Granger causality). Additionally, due to the Bayesian nature of the model, we can shrink the elements of $\beta$ to promote sparsity or specify outside priors for the means in case we're not able to get meaningful estimates from the historical data.</p>
@@ -8605,12 +8453,8 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Model-Evaluation">Model Evaluation<a class="anchor-link" href="#Model-Evaluation">¶</a></h4><ul>
-<li><p>For the S&amp;P 500 index, the BSTS model outperforms the ARIMA model in terms of MAPE score. Additionally, the BSTS model provides a confidence interval for its predictions, generated from the distribution of the MCMC draws. Moreover, while the BSTS model has a significantly higher MAPE score for Bitcoin (BTC), it demonstrates its ability to predict the uptrend followed by a downtrend in future price action. This indicates the model's understanding of the underlying time-series distribution and volatility.</p>
-</li>
-<li><p>Furthermore, one of the major advantages of the Bayesian structural model is the ability to visualize the underlying components of the time series using the model's learned distribution.</p>
-</li>
-</ul>
+<h4 id="Model-Performance">Model Performance<a class="anchor-link" href="#Model-Performance">¶</a></h4><p>The BSTS model significantly outperforms the ARIMA model for both Bitcoin and the S&amp;P 500. Specially, the lower MAPE values when compare with ARIMA for both assets indicate improved accuracy and reliability in the predictions. However, the holdout MAPE for Bitcoin (11.36%) is higher than that for the S&amp;P 500 (3.63%), which is expected given the different nature and volatility of these assets.</p>
+<h4 id="In-sample-Fit-vs.-Holdout-Fit:">In-sample Fit vs. Holdout Fit:<a class="anchor-link" href="#In-sample-Fit-vs.-Holdout-Fit:">¶</a></h4><p>Both models demonstrate strong in-sample fits, indicating they effectively learn from historical data. The holdout fit shows the models' predictive power, with the S&amp;P 500 model performing exceptionally well, while the Bitcoin model, although less precise, still shows good predictive capability considering the high volatility of the asset. The widening of confidence intervals in the Bitcoin model during the holdout period also suggests the model's recognition of increased uncertainty and volatility.</p>
 </div>
 </div>
 </div>
@@ -8641,13 +8485,8 @@ $$
 <li>The last factor is the "spike" part that governs the probability of a given variable being chosen for the model (i.e., having a non-zero coefficient).</li>
 <li>The other factors are modeled to be the "slab" - The part that shrinks the coefficients toward prior expectations (often zero).</li>
 </ul>
-<h4 id="BSTS-Model-with-Spike-and-Slab-Priors">BSTS Model with Spike-and-Slab Priors<a class="anchor-link" href="#BSTS-Model-with-Spike-and-Slab-Priors">¶</a></h4><ul>
-<li>The BSTS model imposes a <em>spike-and-slab prior</em> on the regressor coefficients, which is a powerful way of reducing a large set of correlated variables.</li>
-<li>It allows the model to incorporate uncertainties of the coefficient estimates when producing the credible interval for the forecasts.</li>
-</ul>
-<h4 id="Prior-Parameter-Tuning">Prior Parameter Tuning<a class="anchor-link" href="#Prior-Parameter-Tuning">¶</a></h4><ul>
-<li>We analyze which regression coefficients the previous BSTS models use to predict future prices and try to change the prior parameters (from default values) based on our practical belief to improve performance.</li>
-</ul>
+<h4 id="BSTS-Model-with-Spike-and-Slab-Priors">BSTS Model with Spike-and-Slab Priors<a class="anchor-link" href="#BSTS-Model-with-Spike-and-Slab-Priors">¶</a></h4><p>The BSTS model imposes a <em>spike-and-slab prior</em> on the regressor coefficients, which is a powerful way of reducing a large set of correlated variables. It allows the model to incorporate uncertainties of the coefficient estimates when producing the credible interval for the forecasts.</p>
+<h4 id="Prior-Parameter-Tuning">Prior Parameter Tuning<a class="anchor-link" href="#Prior-Parameter-Tuning">¶</a></h4><p>We analyze which regression coefficients the previous BSTS models use to predict future prices and try to change the prior parameters (from default values) based on our practical belief to improve performance.</p>
 </div>
 </div>
 </div>
@@ -8688,10 +8527,8 @@ $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Through visualizing the inclusion probabilities of all regression coefficients in the previous BSTS models, we observe that both models utilize the Adjusted, High, and Low prices as predictors. However, these variables are highly correlated.</p>
-<p>On the other hand, the S&amp;P 500 model also incorporates trading volumes as a predictor. In technical analysis, volume analysis is one of the main indicators representing market strength. Therefore, we may want to include volume as a predictor in the BTC model as well, given the superior performance of the S&amp;P 500 model.</p>
-<p>To explicitly impose our prior belief that volume should be included, we use a spike-and-slab prior with the spike parameter set to 1 for the volume coefficient.</p>
-<p>Additionally, to reduce the correlation among price-related coefficients, we aim to use only the Adjusted price as our main predictor while restricting the others. This is achieved by setting the expected model size to 2 (Volume + Adjusted_price).</p>
+<p>Through visualizing the inclusion probabilities of all regression coefficients in the previous BSTS models, we observe that both models utilize the Adjusted, High, and Low prices as predictors. However, these variables are highly correlated in reality. In technical analysis, volume analysis is one of the main indicators representing market strength. Therefore, we may want to include volume as a predictor in the BTC model as well, given the superior performance of the S&amp;P 500 model. Thus, we expected to increase the weight for the volume while reduce the correlation among price-related predictors' weights.</p>
+<p>To explicitly impose our prior belief that volume should be included, we use a spike-and-slab prior with the spike parameter set to 1 for the volume coefficient. Additionally, to reduce the correlation among price-related coefficients, we aim to use only the Adjusted price as our main predictor while restricting the others. This is achieved by setting the expected model size to 2 (Volume + Adjusted_price).</p>
 </div>
 </div>
 </div>
@@ -8870,7 +8707,7 @@ $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The BSTS model with our prior performs slightly better for both BTC and S&amp;P500 with MAPE is 10.9% and 2.33% comparing to 11.26% and 3.69%, respectively</p>
+<h4 id="Model-Performance">Model Performance<a class="anchor-link" href="#Model-Performance">¶</a></h4><p>The BSTS model with prior outperforms previous BSTS model for both Bitcoin and the S&amp;P 500. Specially, the BSTS model with our prior performs slightly better for both BTC and S&amp;P500 with MAPE is 10.9% and 2.33% comparing to 11.26% and 3.69%, respectively. These improvements, though modest, demonstrate the effectiveness of the prior assumptions in enhancing the model's forecasting accuracy. The priors, which aimed to increase the weight of trading volume as a predictor variable while reducing the correlation among price-related predictors, appear to have positively impacted the model's ability to capture the underlying dynamics of these time series.</p>
 </div>
 </div>
 </div>
@@ -8911,15 +8748,8 @@ $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.2.3.-Time-series-cross-validation">4.2.3. Time series cross-validation<a class="anchor-link" href="#4.2.3.-Time-series-cross-validation">¶</a></h3><ul>
-<li><p>Forward chaining involves cross-validation on a rolling basis.</p>
-</li>
-<li><p>The process starts with a small subset of data for training purposes, followed by forecasting for the later data points and then checking the accuracy for the forecasted data points.</p>
-</li>
-<li><p>The same forecasted data points are then included as part of the next training dataset, and subsequent data points are forecasted.</p>
+<h3 id="4.2.3.-Time-series-cross-validation">4.2.3. Time series cross-validation<a class="anchor-link" href="#4.2.3.-Time-series-cross-validation">¶</a></h3><p>Forward chaining involves cross-validation on a rolling basis. The process starts with a small subset of data for training purposes, followed by forecasting for the later data points and then checking the accuracy for the forecasted data points. The same forecasted data points are then included as part of the next training dataset, and subsequent data points are forecasted.</p>
 <p><img alt="cv" src="cv.png"/></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -9098,7 +8928,7 @@ Best model for BTC has 20 seasons and 3 regression coefficients with MAPE = 21.7
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="5.1.-Impact">5.1. Impact<a class="anchor-link" href="#5.1.-Impact">¶</a></h3>
+<h3 id="5.1.-Limitations">5.1. Limitations<a class="anchor-link" href="#5.1.-Limitations">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9109,9 +8939,7 @@ Best model for BTC has 20 seasons and 3 regression coefficients with MAPE = 21.7
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The forecasting models employed in this study have demonstrated their capability to provide insightful information regarding future price movements and volatility. This information can serve as a valuable technical indicator, complementing other statistical indicators, to aid traders in identifying optimal entry points for trading stocks. However, it is crucial to recognize that these models, like any other technical indicator, are most effective when combined with sound personal judgment, which remains the pivotal factor influencing the variables in the trading profit optimization model. For optimal performance, the overall model requires sufficient "experience" or training.</p>
-<p>Moreover, the explanatory models can facilitate the diagnosis of price time-series characteristics, revealing the strengths and weaknesses of the corresponding stock. By explicitly introducing new variables through the spike-and-slab prior and observing the impact on model performance, we can identify useful indicators of future prices or even the generating distribution of the overall price time-series.</p>
-<p>It is essential to emphasize that while these models offer valuable insights, they should be employed in conjunction with other analysis techniques and sound judgment. Successful trading necessitates a holistic approach that considers various factors, including market dynamics, risk management, and a deep understanding of the underlying assets.</p>
+<p>Both ARIMA and BSTS models offer unique advantages and face distinct limitations when applied to financial time series forecasting. The ARIMA model is valued for its simplicity and ease of implementation, making it a popular choice for analysts. It's ability to model the linear relationships in stable datasets, such as the S&amp;P 500, to some extend, providing a solid baseline for predictive performance. However, ARIMA models are constrained by their assumptions of linearity and stationarity, which limit their effectiveness in modeling complex and volatile markets like Bitcoin. Moreover, the model’s performance in the holdout period is poorer, reducing its predictive power when faced with new data. Furthermore, ARIMA models lack the capability to provide confidence intervals, which are crucial for understanding prediction uncertainty. On the other hand, the BSTS model excels in handling the intricate patterns inherent in financial data by incorporating trend, seasonality, and regression components. This adaptability allows BSTS models to maintain higher predictive accuracy, as evidenced by lower MAPE values, particularly in volatile markets. The incorporation of prior information, such as trading volume, enhances the model's robustness and flexibility. Moreover, BSTS models offer confidence intervals, providing a measure of prediction uncertainty essential for risk management. However, the complexity of BSTS models requires significant computational resources and expertise in Bayesian methods. Their performance is highly dependent on the quality of priors, and poor priors can bias the results.</p>
 </div>
 </div>
 </div>
@@ -9122,7 +8950,7 @@ Best model for BTC has 20 seasons and 3 regression coefficients with MAPE = 21.7
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="5.2.-Limitations-and-Future-Direction">5.2. Limitations and Future Direction<a class="anchor-link" href="#5.2.-Limitations-and-Future-Direction">¶</a></h3>
+<h3 id="5.2.-Future-Direction">5.2. Future Direction<a class="anchor-link" href="#5.2.-Future-Direction">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9133,9 +8961,7 @@ Best model for BTC has 20 seasons and 3 regression coefficients with MAPE = 21.7
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The performance of forecasting models is fundamentally correlated with a deep understanding of the corresponding stock's dynamics. Notably, the more volatile the price action, the greater the uncertainty in the model's future predictions. This uncertainty amplifies significantly as the forecast horizon extends further into the future.</p>
-<p>There exist numerous technical indicators, either independent or derived from price data, that can be incorporated into the current model to enhance its predictive capabilities.</p>
-<p>One such approach is the CausalImpact R package, which implements a method for estimating the causal effect of a designed intervention on a time series. This package builds a Bayesian structural time series model based on multiple comparable control groups (or markets) and utilizes this model to project (or forecast) a series of baseline values for the time period after the event of interest. By incorporating this approach, the model's ability to account for causal factors and measure their impact on the target time series could be augmented, potentially improving its overall performance.</p>
+<p>The performance of forecasting models is fundamentally correlated with a deep understanding of the corresponding stock's dynamics. Notably, the more volatile the price action, the greater the uncertainty in the model's future predictions. This uncertainty amplifies significantly as the forecast horizon extends further into the future. There exist numerous technical indicators, either independent or derived from price data, that can be incorporated into the current model to enhance its predictive capabilities. One such approach is the CausalImpact R package, which implements a method for estimating the causal effect of a designed intervention on a time series. This package builds a Bayesian structural time series model based on multiple comparable control groups (or markets) and utilizes this model to project (or forecast) a series of baseline values for the time period after the event of interest. By incorporating this approach, the model's ability to account for causal factors and measure their impact on the target time series could be augmented, potentially improving its overall performance.</p>
 </div>
 </div>
 </div>
@@ -9157,10 +8983,8 @@ Best model for BTC has 20 seasons and 3 regression coefficients with MAPE = 21.7
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Here is a paraphrased and rewritten version:</p>
-<p>In this project, we aim to learn and address time-series-related problems through a case study on stock price analysis for Bitcoin (BTC) and the S&amp;P 500 index. First, we conduct a time-series analysis on the price actions of each stock, allowing us to determine their representative characteristics. Subsequently, we construct an ARIMA (Autoregressive Integrated Moving Average) model as a baseline to predict future trends of the stock based on its historical price moving average and lagged values.</p>
-<p>We then build an explanatory model for each time series using the Bayesian Structural Time Series (BSTS) method. These models provide an actual understanding of the underlying generative distribution of the time series and effectively handle the uncertainty of price volatility. Finally, we significantly improve the BSTS models through Bayesian variable selection and forward-chaining cross-validation.</p>
-<p>The results suggest that the output predictions and confidence intervals from these models can serve as informative indicators of the corresponding stock's future price movements. The BSTS models, augmented by variable selection and cross-validation techniques, offer valuable insights into the underlying dynamics and potential future behavior of the time series, accounting for uncertainties and volatilities inherent in stock price data.</p>
+<p>In this project, we aim to learn and address time-series-related problems through a case study on stock price analysis for Bitcoin (BTC) and the S&amp;P 500 index. First, we conduct a time-series analysis on the price actions of each stock, allowing us to determine their representative characteristics. Subsequently, we construct an ARIMA (Autoregressive Integrated Moving Average) model as a baseline to predict future trends of the stock based on its historical price moving average and lagged values. We then build an explanatory model for each time series using the Bayesian Structural Time Series (BSTS) method. These models provide an actual understanding of the underlying generative distribution of the time series and effectively handle the uncertainty of price volatility. Finally, we significantly improve the BSTS models through Bayesian variable selection and forward-chaining cross-validation.</p>
+<p>The results suggest that the output predictions and confidence intervals from these models can serve as informative indicators of the corresponding stock's future price movements. Specifically, ARIMA models are straightforward and effective for stable, linear datasets but fall short in capturing non-linear and volatile patterns, often leading to overfitting in the in-sample period and underperformance in the holdout period. BSTS models provide greater accuracy and adaptability at the cost of higher complexity and computational demands. The choice between these models should consider the specific data characteristics, computational resources, and the need for interpretability and uncertainty quantification.</p>
 </div>
 </div>
 </div>
@@ -9178,6 +9002,8 @@ Best model for BTC has 20 seasons and 3 regression coefficients with MAPE = 21.7
 <li><a href="https://sisifospage.tech/2017-10-30-forecasting-bsts.html">https://sisifospage.tech/2017-10-30-forecasting-bsts.html</a></li>
 <li><a href="https://www.rpubs.com/AurelliaChristie/time-series-and-stock-analysis">https://www.rpubs.com/AurelliaChristie/time-series-and-stock-analysis</a></li>
 <li><a href="https://www.unofficialgoogledatascience.com/2017/07/fitting-bayesian-structural-time-series.html">https://www.unofficialgoogledatascience.com/2017/07/fitting-bayesian-structural-time-series.html</a></li>
+<li><a href="https://towardsdatascience.com/forecasting-time-series-data-stock-price-analysis-324bcc520af5">https://towardsdatascience.com/forecasting-time-series-data-stock-price-analysis-324bcc520af5</a></li>
+<li><a href="https://claude.ai">https://claude.ai</a></li>
 </ul>
 </div>
 </div>
